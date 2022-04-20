@@ -1,7 +1,13 @@
 body{
     font-family: 'Poppins', sans-serif;
+    position: relative;
 }
 /*=====Navbar===========*/
+header{
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
 .login-signup a{
   color: #fff !important;
   text-decoration: none;
@@ -11,7 +17,7 @@ body{
   text-decoration: none;
 }
 .navbar-brand{
-  font-size: 200%;
+  font-size: 200% !important;
 
 }
 .navbar .nav-link{
@@ -38,6 +44,7 @@ body{
 /*=========Slider Section ============*/
 .carousel-item{
     height: 600px;
+    margin-top: 106px;
 }
 .carousel-image-1{
     background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)), 
@@ -150,6 +157,10 @@ body{
     }
     .products-second p i{
       color: yellow;
+    }
+    .click-buy{
+      width: 30% !important;
+    margin-left: -100px !important;
     }
 
 
