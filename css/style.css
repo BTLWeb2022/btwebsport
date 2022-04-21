@@ -5,7 +5,7 @@ body{
 /*=====Navbar===========*/
 header{
   position: fixed;
-  z-index: 1;
+  z-index: 16;
   width: 100%;
 }
 .login-signup a{
@@ -101,10 +101,9 @@ header{
   justify-content: center;
  }
  .products-first img{
-   width: 170px;
-   height: 120;
-   margin-top: 15px;
-   margin-bottom: 20px;
+   width: 80%;
+   height: 120px;
+   margin: 20px;
    justify-items: center;
  }
  .products-first h6{
@@ -182,6 +181,20 @@ header{
 .footer{
   background: #000;
   color: #fff;
+}
+ul.menu-foot {
+  list-style-type: none;
+}
+ul.menu-foot a{
+  text-decoration: none;
+  color: rgba(240, 248, 255, 0.527);
+}
+.widget-menu{
+  list-style-type: none;
+}
+ul.widget-menu a{
+  text-decoration: none;
+  color: rgba(240, 248, 255, 0.527);
 }
 .fab{
   padding-left: 10px;
