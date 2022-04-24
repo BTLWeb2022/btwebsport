@@ -60,19 +60,19 @@ header {
 
 .carousel-image-1 {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
-    url('../img/banner-bongro.jpg');
+    url('../img/banner-trangchu/banner-bongro.jpg');
   background-size: cover;
 }
 
 .carousel-image-2 {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
-    url('../img/banner-xedap-sport=.jpg');
+    url('../img/banner-trangchu/banner-xedap-sport=.jpg');
   background-size: cover;
 }
 
 .carousel-image-3 {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
-    url('../img/bannerbanbongban.jpg');
+    url('../img/banner-trangchu/bannerbanbongban.jpg');
   background-size: cover;
 }
 
@@ -115,6 +115,9 @@ header {
   font-size: 40px;
   justify-content: center;
   margin-top: 5px;
+}
+img.img-fluid {
+  height: 440px;
 }
 .col-small .gia_khuyen_mai span{
 
@@ -255,4 +258,8 @@ ul.widget-menu a {
 
 .fab {
   padding-left: 10px;
+}
+
+.information{
+  padding-top: 120px;
 }
