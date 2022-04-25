@@ -87,7 +87,8 @@ header {
 }
 
 .btn-color:hover {
-  color: #fff;
+  background-color: #fff;
+  color: #000;
 }
 
 .slide-btn {
@@ -129,7 +130,43 @@ img.img-fluid {
   color: yellow;
 }
 
+.col-small {
+  border: 1px solid lightgray;
+  transition: all 0.5s;
+  height: 450px;
+  padding: 10px;
+}
 
+.col-small:hover {
+  cursor: pointer;
+}
+
+.col-small:hover {
+  border: 1px solid #337ab7;
+  border-radius: 10px;
+}
+
+.col-small:hover img {
+  padding: 5px;
+}
+
+.col-small:hover .ten {
+  color: #5151f3;
+}
+
+.col-small:hover button {
+  color: white;
+  background: #f76b1c;
+}
+
+.col-big:hover {
+  cursor: pointer;
+}
+
+.col-big:hover {
+  border: 1px solid #337ab7;
+  border-radius: 10px;
+}
 .product-title {
   color: #fff;
 }
@@ -179,44 +216,37 @@ img.img-fluid {
   width: 30% !important;
   margin-left: -100px !important;
 }
-
-.col-small {
+.card {
   border: 1px solid lightgray;
   transition: all 0.5s;
-  height: 450px;
+  height: 550px;
   padding: 10px;
 }
 
-.col-small:hover {
+.card:hover {
   cursor: pointer;
 }
 
-.col-small:hover {
+.card:hover {
   border: 1px solid #337ab7;
   border-radius: 10px;
 }
 
-.col-small:hover img {
+.card:hover img {
   padding: 5px;
 }
 
-.col-small:hover .ten {
+.card:hover .card-title {
   color: #5151f3;
 }
 
-.col-small:hover button {
+.card:hover button {
   color: white;
   background: #f76b1c;
 }
 
-.col-big:hover {
-  cursor: pointer;
-}
 
-.col-big:hover {
-  border: 1px solid #337ab7;
-  border-radius: 10px;
-}
+
 
 /* Grow Shadow */
 

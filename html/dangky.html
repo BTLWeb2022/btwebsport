@@ -60,7 +60,200 @@
         }
     </style>
 </head>
+<script>
+  function kiemTraTK(){
+      var regex = /\w+[.-?]*$/;
+      var taikhoan = document.getElementById("txtTK").value;
+      if(taikhoan == ""){
+          document.getElementById("er1").innerHTML = "Bạn chưa nhập tài khoản";
+          return false;
+      }
+      if(regex.test(taikhoan)){
+          document.getElementById("er1").innerHTML = "";
+          return true;
+      }
+      else{
+          document.getElementById("er1").innerHTML = "Nhập sai tài khoản, tài khoản bao gồm các ký tự từ A-Z, chữ số và kí tự đắc biệt";
+          return false;
+      }
+  }
+  function kiemTraEmail(){
+      var regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+      var email = document.getElementById("txtMail").value;
+      if(email == ""){
+          document.getElementById("er2").innerHTML = "Bạn chưa nhập email";
+          return false;
+      }
+      if(regex.test(email)){
+          document.getElementById("er2").innerHTML = "";
+          return true;
+      }
+      else{
+          document.getElementById("er2").innerHTML = "Nhập sai email, email theo định dạng ten@gmail.com";
+          return false;
+      }
+  }
+  function kiemTraMK(){
+      var regex = /^[A-Za-z0-9]{8}$/;
+      var MK = document.getElementById("txtMK").value;
+      if(MK == ""){
+          document.getElementById("er3").innerHTML = "Bạn chưa nhập mật khẩu";
+          return false;
+      }
+      if(regex.test(MK)){
+          document.getElementById("er3").innerHTML = "";
+          return true;
+      }
+      else{
+          document.getElementById("er3").innerHTML = "Nhập sai mật khẩu, mật khẩu có 8 ký tự bao gồm các ký tự từ A-Z,0-9 ";
+          return false;
+      }
+  }
+  function kiemTraNLMK(){
+      var nlmk = document.getElementById("txtNLMK").value;
+      var mk = document.getElementById("txtMK").value;
+      if(nlmk == ""){
+          document.getElementById("er4").innerHTML = "Bạn chưa nhập mật khẩu";
+          return false;
+      }
+      if(nlmk == mk ){
+          document.getElementById("er4").innerHTML = "";
+          return true;
+      }
+      else{
+          document.getElementById("er4").innerHTML = "Nhập sai mật khẩu, mời nhập lại ";
+          return false;
+      }
+  }
+  function kiemTraTen(){
+      var regex = /^[A-Z][A-Za-z ]+([A-Z]+[A-Za-z ]+)*$/;
+      var ten = document.getElementById("txtHoTen").value;
+      if(ten == ""){
+          document.getElementById("er5").innerHTML = "Bạn chưa nhập tên";
+          return false;
+      }
+      if(regex.test(ten)){
+          document.getElementById("er5").innerHTML = "";
+          return true;
+      }
+      else{
+          document.getElementById("er5").innerHTML = "Nhập tên sai. VD:N";
+          return false;
+      }
+  }
+  function kiemTraSDT(){
+      var sdt = document.getElementById("txtSDT").value;
+      var regex = /^0[0-9]{9}$/;
+      if(sdt == ""){
+          document.getElementById("er6").innerHTML = "Bạn chưa nhập số điện thoại";
+          return false;
+      }
+      if(regex.test(sdt)){
+          document.getElementById("er6").innerHTML = "";
+          return true;
+      }
+      else{
+          document.getElementById("er6").innerHTML = "Nhập sai số điện thoại. Số điện thoại chỉ có 10 chữ sô. VD:0394682354";
+          return false;
+      }
+  }
+  function kiemTraDiaChi(){
+      var regex = /^[A-Z0-9 ]+[A-Za-z ]+([A-Z]+[A-Za-z ]+)*$/;
+      var diachi = document.getElementById("txtDiaChi").value;
+      if(diachi == ""){
+          document.getElementById("er7").innerHTML = "Bạn chưa nhập địa chỉ";
+          return false;
+      }
+      if(regex.test(diachi)){
+          document.getElementById("er7").innerHTML = "";
+          return true;
+      }
+      else{
+          document.getElementById("er7").innerHTML = "Nhập sai địa chỉ. VD: 23 Đường An Duong Vuong";
+          return false;
+      }
+  }
+  function dangky(){
+      var taikhoan = document.getElementById("txtTK").value;
+      var mk = document.getElementById("txtMK").value;
+      var ten = document.getElementById("txtHoTen").value;
+      var email = document.getElementById("txtMail").value;
+      var diachi = document.getElementById("txtDiaChi").value;
+      var sdt = document.getElementById("txtSDT").value;
+      var nlmk = document.getElementById("txtNLMK").value;
+      var gt;
+      for (var i = 0; i < document.getElementById("frm").length; i++)
+          if (document.getElementById("frm").elements[i].type == "radio" && document.getElementById("frm").elements[i].checked)
+              //dang chon
+              gt = document.getElementById("frm").elements[i].value;
 
+      if(kiemTraTK(taikhoan)){
+          if(kiemTraMK(mk)){
+              if(kiemTraNLMK(nlmk)){
+                  if(kiemTraTen(ten)){
+                      if(kiemTraSDT(sdt)){
+                          if(kiemTraDiaChi(diachi)){
+                              if(kiemTraEmail(email)){
+                                  alert("Đăng ký thành công")
+                                  return true;
+                              }
+                              else{
+                                  document.getElementById("er2").innerHTML = "Bạn chưa nhập email";
+                                  alert("Đăng ký thất bại")
+                                  return false;
+                              }
+                          }
+                          else{
+                              document.getElementById("er7").innerHTML = "Bạn chưa nhập địa chỉ";
+                              alert("Đăng ký thất bại")
+                              return false;
+                          }
+                      }
+                      else{
+                          document.getElementById("er6").innerHTML = "Bạn chưa nhập số điện thoại";
+                          alert("Đăng ký thất bại")
+                          return false;
+                      }
+                  }
+                  else{
+                      document.getElementById("er5").innerHTML = "Bạn chưa nhập họ và tên";
+                      alert("Đăng ký thất bại")
+                      return false
+                  }
+              }
+              else{
+                  document.getElementById("er4").innerHTML = "Bạn chưa nhập mật khẩu";
+                  alert("Đăng ký thất bại")
+                  return false;
+              }
+          }
+          else{
+              document.getElementById("er3").innerHTML = "Bạn chưa nhập mật khẩu";
+              alert("Đăng ký thất bại")
+              return false;
+
+          }
+      }
+      else{
+          document.getElementById("er1").innerHTML = "Bạn chưa nhập tên tài khoản";
+          alert("Đăng ký thất bại")
+          return false;
+      }
+  }
+
+  function dangnhap(){
+      var dangnhap = document.getElementById("txtDN").value;
+      var mkdangnhap = document.getElementById("txtMKDN").value;
+      if(dangnhap == "dangnhap" && mkdangnhap == "12345678"){
+          alert("Đăng nhập thành công")
+          return true;
+      }
+      else{
+          alert("Đăng nhập thất bại")
+          return false;
+      }
+  }
+</script>
 <body>
     <!-- header section starts -->
     <!--Nav-->
