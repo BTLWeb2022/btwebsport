@@ -15,6 +15,21 @@
   <script src="../js/jquery-3.6.0.min.js"></script>
 </head>
 
+<script>
+  function dangnhap() {
+    var dangnhap = document.getElementById("txtDN").value;
+    var mkdangnhap = document.getElementById("txtMKDN").value;
+    if (dangnhap == "NHATMIN123" && mkdangnhap == "123456789") {
+      alert("Đăng nhập thành công")
+      return true;
+    }
+    else {
+      alert("Đăng nhập thất bại")
+      return false;
+    }
+  }
+</script>
+
 <body>
   <!-- header section starts -->
   <!--Nav-->
@@ -40,7 +55,7 @@
               <a href="../html/index.html" class="nav-link">Trang&nbsp;chủ</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Giới&nbsp;thiệu</a>
+              <a href="../html/GioiThieu.html" class="nav-link">Giới&nbsp;thiệu</a>
             </li>
             <li class="nav-item dropdown">
               <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
@@ -57,7 +72,7 @@
               </div>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Tin&nbsp;tức</a>
+              <a href="../html/tintuc.html" class="nav-link">Tin&nbsp;tức</a>
             </li>
             <li class="nav-item">
               <a href="../html/lienhe.html" class="nav-link">Liên&nbsp;hệ</a>
@@ -68,7 +83,7 @@
               <i class="fa fa-search" aria-hidden="true"></i>
             </button>
             <li class="nav-item cart-text">
-              <a href="#" class="nav-link"><i class="fas fa-shopping-cart fa-2x"></i>2</a>
+              <a href="../html/giohang.html" class="nav-link"><i class="fas fa-shopping-cart fa-2x"></i>2</a>
             </li>
           </ul>
         </div>
@@ -86,7 +101,8 @@
       <div class="row hinh1">
 
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12  mt-4 pt-4">
-          <img src="../img/item-xedapsport/Banner-xe-dap-tap-the-duc-the-thao-dong-a.jpg" alt="" width="2000" class="img-fluid">
+          <img src="../img/item-xedapsport/Banner-xe-dap-tap-the-duc-the-thao-dong-a.jpg" alt="" width="2000"
+            class="img-fluid">
         </div>
 
       </div>
@@ -119,15 +135,15 @@
           <div class="row row-can-le">
             <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <div class="card">
-                <a href="" data-toggle="modal" data-target="#modal1"><img width="180" height="180"
-                    src="../img/item-xedapsport/item1.jpg" alt="" class="img-responsive"></a>
+                <a href=""><img width="180" height="180" src="../img/item-xedapsport/item1.jpg" alt=""
+                    class="img-responsive"></a>
                 <div class="card-body">
-                  <h6 class="card-title">Bàn bóng bàn trẻ em MP99J</h6>
+                  <h6 class="card-title">Xe đạp tập thể dục Longstyle </h6>
                   <p class="card-text">
                     <small class="text-muted"><del>13,200,000 <sup>đ</sup></del></small>
-                    <span> 11,900,000<sup>đ</sup></span>
+                    <span class="gia giam" style="color: red;"> 11,900,000<sup>đ</sup></span>
                   </p>
-                  <p class="card-text">
+                  <p class="card-text" style="color: yellow;">
                     <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                       class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><small class="text-muted"> 201 đã
                       bán</small>
@@ -143,17 +159,17 @@
             <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 
               <div class="card">
-                <a href="" data-toggle="modal" data-target="#modal1"><img width="180" height="180"
-                    src="../img/item-xedapsport/item1.jpg" alt="" class="img-responsive"></a>
+                <a href=""><img width="180" height="180" src="../img/item-xedapsport/item2.jpg" alt=""
+                    class="img-responsive"></a>
                 <div class="card-body">
-                  <h6 class="card-title">Bàn bóng bàn trẻ em MP99J</h6>
+                  <h6 class="card-title">Xe Đạp Tập Thể Dục MAS-212J</h6>
                   <p class="card-text">
-                    <small class="text-muted"><del>13,200,000 <sup>đ</sup></del></small>
-                    <span> 11,900,000<sup>đ</sup></span>
+                    <small class="text-muted"><del>8,500,000 <sup>đ</sup></del></small>
+                    <span class="gia giam" style="color: red;"> 6,990,000<sup>đ</sup></span>
                   </p>
-                  <p class="card-text">
+                  <p class="card-text" style="color: yellow;">
                     <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                      class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><small class="text-muted"> 201 đã
+                      class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><small class="text-muted"> 199 đã
                       bán</small>
                   </p>
                   <p class="card-text">
@@ -166,15 +182,15 @@
 
             <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <div class="card">
-                <a href="" data-toggle="modal" data-target="#modal1"><img width="180" height="180"
-                    src="../img/item-xedapsport/item1.jpg" alt="" class="img-responsive"></a>
+                <a href=""><img width="180" height="180" src="../img/item-xedapsport/item3.jpg" alt=""
+                    class="img-responsive"></a>
                 <div class="card-body">
-                  <h6 class="card-title">Bàn bóng bàn trẻ em MP99J</h6>
+                  <h6 class="card-title">Xe đạp phòng tập PS 250</h6>
                   <p class="card-text">
                     <small class="text-muted"><del>13,200,000 <sup>đ</sup></del></small>
-                    <span> 11,900,000<sup>đ</sup></span>
+                    <span class="gia giam" style="color: red;">9,900,000<sup>đ</sup></span>
                   </p>
-                  <p class="card-text">
+                  <p class="card-text" style="color: yellow;">
                     <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                       class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><small class="text-muted"> 201 đã
                       bán</small>
@@ -194,15 +210,37 @@
 
             <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <div class="card">
-                <a href="" data-toggle="modal" data-target="#modal1"><img width="180" height="180"
-                    src="../img/item-xedapsport/item1.jpg" alt="" class="img-responsive"></a>
+                <a href=""><img width="180" height="180" src="../img/item-xedapsport/item4.jpg" alt=""
+                    class="img-responsive"></a>
                 <div class="card-body">
-                  <h6 class="card-title">Bàn bóng bàn trẻ em MP99J</h6>
+                  <h6 class="card-title">Xe đạp tập liên hoàn Life Span</h6>
                   <p class="card-text">
-                    <small class="text-muted"><del>13,200,000 <sup>đ</sup></del></small>
-                    <span> 11,900,000<sup>đ</sup></span>
+                    <small class="text-muted"><del>3,400,000 <sup>đ</sup></del></small>
+                    <span class="gia giam" style="color: red;">3,150,000<sup>đ</sup></span>
+                  </p>
+                  <p class="card-text" style="color: yellow;">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                      class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><small class="text-muted"> 173 đã
+                      bán</small>
                   </p>
                   <p class="card-text">
+                    <i class="fa-solid fa-truck" style="color: orangered;"></i> Vận chuyển toàn quốc
+                  </p>
+                  <button class="btn btn-warning ml-5 button-responsive">Mua Ngay</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+              <div class="card">
+                <a href=""><img width="180" height="180" src="../img/item-xedapsport/item5.jpg" alt=""
+                    class="img-responsive"></a>
+                <div class="card-body">
+                  <h6 class="card-title">Xe đạp tập thể dục DB-JT101</h6>
+                  <p class="card-text">
+                    <small class="text-muted"><del>4,500,000<sup>đ</sup></del></small>
+                    <span class="gia giam" style="color: red;"> 3,650,000<sup>đ</sup></span>
+                  </p>
+                  <p class="card-text" style="color: yellow;">
                     <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                       class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><small class="text-muted"> 201 đã
                       bán</small>
@@ -216,39 +254,17 @@
             </div>
             <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <div class="card">
-                <a href="" data-toggle="modal" data-target="#modal1"><img width="180" height="180"
-                    src="../img/item-xedapsport/item1.jpg" alt="" class="img-responsive"></a>
+                <a href=""><img width="180" height="180" src="../img/item-xedapsport/item6.jpg" alt=""
+                    class="img-responsive"></a>
                 <div class="card-body">
-                  <h6 class="card-title">Bàn bóng bàn trẻ em MP99J</h6>
+                  <h6 class="card-title">Xe đạp tập thể dục Doufit EB-09</h6>
                   <p class="card-text">
-                    <small class="text-muted"><del>13,200,000 <sup>đ</sup></del></small>
-                    <span> 11,900,000<sup>đ</sup></span>
+                    <small class="text-muted"><del>5,500,000 <sup>đ</sup></del></small>
+                    <span class="gia giam" style="color: red;">4,750,000<sup>đ</sup></span>
                   </p>
-                  <p class="card-text">
+                  <p class="card-text" style="color: yellow;">
                     <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                      class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><small class="text-muted"> 201 đã
-                      bán</small>
-                  </p>
-                  <p class="card-text">
-                    <i class="fa-solid fa-truck" style="color: orangered;"></i> Vận chuyển toàn quốc
-                  </p>
-                  <button class="btn btn-warning ml-5 button-responsive">Mua Ngay</button>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-              <div class="card">
-                <a href="" data-toggle="modal" data-target="#modal1"><img width="180" height="180"
-                    src="../img/item-xedapsport/item1.jpg" alt="" class="img-responsive"></a>
-                <div class="card-body">
-                  <h6 class="card-title">Bàn bóng bàn trẻ em MP99J</h6>
-                  <p class="card-text">
-                    <small class="text-muted"><del>13,200,000 <sup>đ</sup></del></small>
-                    <span> 11,900,000<sup>đ</sup></span>
-                  </p>
-                  <p class="card-text">
-                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                      class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><small class="text-muted"> 201 đã
+                      class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><small class="text-muted">286 đã
                       bán</small>
                   </p>
                   <p class="card-text">
@@ -265,15 +281,15 @@
 
             <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <div class="card">
-                <a href="" data-toggle="modal" data-target="#modal1"><img width="180" height="180"
-                    src="../img/item-xedapsport/item1.jpg" alt="" class="img-responsive"></a>
+                <a href=""><img width="180" height="180" src="../img/item-xedapsport/item7.jpg" alt=""
+                    class="img-responsive"></a>
                 <div class="card-body">
-                  <h6 class="card-title">Bàn bóng bàn trẻ em MP99J</h6>
+                  <h6 class="card-title">Xe đạp tập thể dục Impulse </h6>
                   <p class="card-text">
-                    <small class="text-muted"><del>13,200,000 <sup>đ</sup></del></small>
-                    <span> 11,900,000<sup>đ</sup></span>
+                    <small class="text-muted"><del>14,000,000 <sup>đ</sup></del></small>
+                    <span class="gia giam" style="color: red;"> 12,000,000<sup>đ</sup></span>
                   </p>
-                  <p class="card-text">
+                  <p class="card-text" style="color: yellow;">
                     <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                       class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><small class="text-muted"> 201 đã
                       bán</small>
@@ -288,17 +304,17 @@
 
             <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <div class="card">
-                <a href="" data-toggle="modal" data-target="#modal1"><img width="180" height="180"
-                    src="../img/item-xedapsport/item1.jpg" alt="" class="img-responsive"></a>
+                <a href=""><img width="180" height="180" src="../img/item-xedapsport/item8.jpg" alt=""
+                    class="img-responsive"></a>
                 <div class="card-body">
-                  <h6 class="card-title">Bàn bóng bàn trẻ em MP99J</h6>
+                  <h6 class="card-title">Xe đạp tập thể dục Sovnia L-002</h6>
                   <p class="card-text">
-                    <small class="text-muted"><del>13,200,000 <sup>đ</sup></del></small>
-                    <span> 11,900,000<sup>đ</sup></span>
+                    <small class="text-muted"><del>4,550,000<sup>đ</sup></del></small>
+                    <span class="gia giam" style="color: red;"> 3,850,000<sup>đ</sup></span>
                   </p>
-                  <p class="card-text">
+                  <p class="card-text" style="color: yellow;">
                     <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                      class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><small class="text-muted"> 201 đã
+                      class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><small class="text-muted"> 147 đã
                       bán</small>
                   </p>
                   <p class="card-text">
@@ -312,17 +328,17 @@
 
             <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <div class="card">
-                <a href="" data-toggle="modal" data-target="#modal1"><img width="180" height="180"
-                    src="../img/item-xedapsport/item1.jpg" alt="" class="img-responsive"></a>
+                <a href=""><img width="180" height="180" src="../img/item-xedapsport/item9.jpg" alt=""
+                    class="img-responsive"></a>
                 <div class="card-body">
-                  <h6 class="card-title">Bàn bóng bàn trẻ em MP99J</h6>
+                  <h6 class="card-title">Xe đạp tập thể dục Spin</h6>
                   <p class="card-text">
-                    <small class="text-muted"><del>13,200,000 <sup>đ</sup></del></small>
-                    <span> 11,900,000<sup>đ</sup></span>
+                    <small class="text-muted"><del>4,200,000 <sup>đ</sup></del></small>
+                    <span class="gia giam" style="color: red;"> 3,550,000<sup>đ</sup></span>
                   </p>
-                  <p class="card-text">
+                  <p class="card-text" style="color: yellow;">
                     <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                      class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><small class="text-muted"> 201 đã
+                      class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><small class="text-muted"> 188 đã
                       bán</small>
                   </p>
                   <p class="card-text">
@@ -339,17 +355,17 @@
 
             <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <div class="card">
-                <a href="" data-toggle="modal" data-target="#modal1"><img width="180" height="180"
-                    src="../img/item-xedapsport/item1.jpg" alt="" class="img-responsive"></a>
+                <a href=""><img width="180" height="180" src="../img/item-xedapsport/item10.jpg" alt=""
+                    class="img-responsive"></a>
                 <div class="card-body">
-                  <h6 class="card-title">Bàn bóng bàn trẻ em MP99J</h6>
+                  <h6 class="card-title">Xe đạp tập thể dục Tokado </h6>
                   <p class="card-text">
-                    <small class="text-muted"><del>13,200,000 <sup>đ</sup></del></small>
-                    <span> 11,900,000<sup>đ</sup></span>
+                    <small class="text-muted"><del>9,250,000 <sup>đ</sup></del></small>
+                    <span class="gia giam" style="color: red;"> 7,650,000<sup>đ</sup></span>
                   </p>
-                  <p class="card-text">
+                  <p class="card-text" style="color: yellow;">
                     <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                      class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><small class="text-muted"> 201 đã
+                      class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><small class="text-muted"> 140 đã
                       bán</small>
                   </p>
                   <p class="card-text">
@@ -362,17 +378,17 @@
 
             <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <div class="card">
-                <a href="" data-toggle="modal" data-target="#modal1"><img width="180" height="180"
-                    src="../img/item-xedapsport/item1.jpg" alt="" class="img-responsive"></a>
+                <a href=""><img width="180" height="180" src="../img/item-xedapsport/item11.jpg" alt=""
+                    class="img-responsive"></a>
                 <div class="card-body">
-                  <h6 class="card-title">Bàn bóng bàn trẻ em MP99J</h6>
+                  <h6 class="card-title">Xe đạp tập thể dục Tokado T</h6>
                   <p class="card-text">
-                    <small class="text-muted"><del>13,200,000 <sup>đ</sup></del></small>
-                    <span> 11,900,000<sup>đ</sup></span>
+                    <small class="text-muted"><del>7,950,000 <sup>đ</sup></del></small>
+                    <span class="gia giam" style="color: red;"> 6,480,000<sup>đ</sup></span>
                   </p>
-                  <p class="card-text">
+                  <p class="card-text" style="color: yellow;">
                     <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                      class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><small class="text-muted"> 201 đã
+                      class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><small class="text-muted"> 223 đã
                       bán</small>
                   </p>
                   <p class="card-text">
@@ -385,15 +401,15 @@
 
             <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <div class="card">
-                <a href="" data-toggle="modal" data-target="#modal1"><img width="180" height="180"
-                    src="../img/item-xedapsport/item1.jpg" alt="" class="img-responsive"></a>
+                <a href=""><img width="180" height="180" src="../img/item-xedapsport/item12.jpg" alt=""
+                    class="img-responsive"></a>
                 <div class="card-body">
-                  <h6 class="card-title">Bàn bóng bàn trẻ em MP99J</h6>
+                  <h6 class="card-title">Xe đạp thể dục Adidas C-16</h6>
                   <p class="card-text">
-                    <small class="text-muted"><del>13,200,000 <sup>đ</sup></del></small>
-                    <span> 11,900,000<sup>đ</sup></span>
+                    <small class="text-muted"><del>19,990,000 <sup>đ</sup></del></small>
+                    <span class="gia giam" style="color: red;">17,625,000<sup>đ</sup></span>
                   </p>
-                  <p class="card-text">
+                  <p class="card-text" style="color: yellow;">
                     <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                       class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><small class="text-muted"> 201 đã
                       bán</small>
@@ -446,19 +462,19 @@
             <!-- End .widget-title -->
             <ul class="widget-menu">
 
-              <li><a href="/">Trang chủ</a>
+              <li><a href="index.html">Trang chủ</a>
               </li>
 
-              <li><a href="/gioi-thieu">Giới thiệu</a>
+              <li><a href="../html/GioiThieu.html">Giới thiệu</a>
               </li>
 
-              <li><a href="/collections/all">Sản phẩm</a>
+              <li><a href="#">Sản phẩm</a>
               </li>
 
-              <li><a href="/tin-tuc">Tin tức</a>
+              <li><a href="../html/tintuc.html">Tin tức</a>
               </li>
 
-              <li><a href="/lien-he">Liên hệ</a>
+              <li><a href="../html/lienhe.html">Liên hệ</a>
               </li>
 
             </ul>
@@ -472,19 +488,19 @@
             <!-- End .widget-title -->
             <ul class="widget-menu">
 
-              <li><a href="/">Trang chủ</a>
+              <li><a href="index.html">Trang chủ</a>
               </li>
 
-              <li><a href="/gioi-thieu">Giới thiệu</a>
+              <li><a href="../html/GioiThieu.html">Giới thiệu</a>
               </li>
 
-              <li><a href="/collections/all">Sản phẩm</a>
+              <li><a href="#">Sản phẩm</a>
               </li>
 
-              <li><a href="/tin-tuc">Tin tức</a>
+              <li><a href="../html/tintuc.html">Tin tức</a>
               </li>
 
-              <li><a href="/lien-he">Liên hệ</a>
+              <li><a href="../html/lienhe.html">Liên hệ</a>
               </li>
             </ul>
             <!-- End .widget-menu -->
@@ -497,19 +513,19 @@
             <!-- End .widget-title -->
             <ul class="widget-menu">
 
-              <li><a href="/">Trang chủ</a>
+              <li><a href="index.html">Trang chủ</a>
               </li>
 
-              <li><a href="/gioi-thieu">Giới thiệu</a>
+              <li><a href="../html/GioiThieu.html">Giới thiệu</a>
               </li>
 
-              <li><a href="/collections/all">Sản phẩm</a>
+              <li><a href="#">Sản phẩm</a>
               </li>
 
-              <li><a href="/tin-tuc">Tin tức</a>
+              <li><a href="../html/tintuc.html">Tin tức</a>
               </li>
 
-              <li><a href="/lien-he">Liên hệ</a>
+              <li><a href="../html/lienhe.html">Liên hệ</a>
               </li>
 
             </ul>
@@ -523,19 +539,19 @@
             <!-- End .widget-title -->
             <ul class="widget-menu">
 
-              <li><a href="/">Trang chủ</a>
+              <li><a href="index.html">Trang chủ</a>
               </li>
 
-              <li><a href="/gioi-thieu">Giới thiệu</a>
+              <li><a href="../html/GioiThieu.html">Giới thiệu</a>
               </li>
 
-              <li><a href="/collections/all">Sản phẩm</a>
+              <li><a href="#">Sản phẩm</a>
               </li>
 
-              <li><a href="/tin-tuc">Tin tức</a>
+              <li><a href="../html/tintuc.html">Tin tức</a>
               </li>
 
-              <li><a href="/lien-he">Liên hệ</a>
+              <li><a href="../html/lienhe.html">Liên hệ</a>
               </li>
 
             </ul>
@@ -588,7 +604,7 @@
       </div>
     </div>
   </footer>
-    <!-- chuyển slide -->
+  <!-- chuyển slide -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="../bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
   <script src="../bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
